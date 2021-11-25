@@ -10,27 +10,124 @@
 
 body{
     background-color: rgb(90, 90, 54);
-    font-family: 'Karla', sans-serif;
+    font-family: 'Karla',sans-serif;
 }
 /* main card component */
 .card{
     display: grid;
     grid-template-rows: 50%;
     background-color: white;
-    width: 500px;
+    width: 550px;
     margin: 200px auto;
     border: none;
     border-radius: 10px ;
 }
+
+/* top-section of the card */
+.main-section{
+    margin: 20px 30px;
+    padding-bottom: 10px;
+}
+.main-section .header-text{
+    color: hsl(179, 62%, 43%);
+    font-size: 20px;
+    font-weight: 700;
+    padding-bottom: 5px;
+}
+.main-section .sub-header{
+    color: hsl(71, 73%, 54%);
+    font-weight: bolder;
+    padding: 15px 0;
+}
+.main-section .sub-text{
+    color: hsl(218, 22%, 67%);
+    padding-bottom: 10px;
+    font-size: 15px;
+}
+
 /* second grid section */
 .second-section{
     display: grid;
     grid-template-columns: repeat(2, 1fr);
 }
 
+/* the subscription box */
 .second-section .subscription-box{
     background-color: hsl(179, 62%, 43%);
+    color: white;
+    padding: 30px 30px;
+    border: none;
+    border-bottom-left-radius: 10px;
+}
+
+.second-section .subscription-box .sub-header{
+    color: white;
+    font-weight: bolder;
+    margin-bottom: 15px;
+}
+
+.second-section .subscription-box .price{
+    margin-bottom: 10px;
+}
+.second-section .subscription-box .price .money{
+    color: white;
+    font-weight: 400;
+    font-size: 30px;
+    display: inline;
+}
+.second-section .subscription-box .price .small-text{
+    color: rgba(255, 255, 255, 0.40);
+    /* height: 25px;
+    line-height: 25px;
+    text-align: center; */
+    margin-left: 10px;
+    display: inline;
+}
+
+.second-section .subscription-box .sub-text{
+    color: rgba(255, 255, 255, 0.685);
+    font-size: 15px;
+    margin-bottom: 20px;
+}
+
+/* sign up button */
+.second-section .subscription-box .btn{
+    background-color: hsl(71, 73%, 54%);
+    cursor: pointer;
+    width: 200px;
+    padding: 12px;
+    border: none;
+    border-radius: 5px;
+    box-shadow: -0px 10px 10px -2px #16151533;
+}
+.second-section .subscription-box .btn a{
+    color: white;
+    text-decoration: none;
+    text-transform: capitalize;
+    font-size: 15px;
+    font-weight: 700;
 }
 .second-section .why-box{
-    background-color: hsla(179, 62%, 43%, 0.726);
+    background-color: hsla(179, 62%, 43%, 0.795);
+    padding-left: 30px;
+    padding-top: 30px;
+    padding-bottom: 30px;
+    height: 200px;
+    border: none;
+    border-bottom-right-radius: 10px;
 }
+
+/* why us box */
+.why-box .sub-header{
+    color: white;
+    font-weight: 600;
+    padding-bottom: 10px;
+}
+
+.why-box .small-text{
+    color: rgba(255, 255, 255, 0.377);
+    font-size: 15px;
+    padding-bottom: 10px;
+}
+
+/* for mobile-design */
