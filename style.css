@@ -1,5 +1,7 @@
-/* org */
-.attribution { font-size: 11px; text-align: center; }
+/*  */
+.attribution { 
+    font-size: 11px; 
+    text-align: center; }
 
 .attribution a { color: hsl(228, 45%, 44%); }
 
@@ -15,6 +17,7 @@ body{
 /* main card component */
 .card{
     display: grid;
+    display: flexbox;
     grid-template-rows: 50%;
     background-color: white;
     width: 550px;
@@ -112,7 +115,7 @@ body{
     padding-left: 30px;
     padding-top: 30px;
     padding-bottom: 30px;
-    height: 200px;
+    height: 190px;
     border: none;
     border-bottom-right-radius: 10px;
 }
@@ -131,3 +134,10 @@ body{
 }
 
 /* for mobile-design */
+@media(max-width: 375px){
+    .card{
+        display: flex;
+        flex-direction: row;
+        margin: 100px auto;
+    }
+}
